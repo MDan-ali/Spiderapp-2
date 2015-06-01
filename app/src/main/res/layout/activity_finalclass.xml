@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff172d89"
+    android:id="@+id/second">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/finalText"
+        android:id="@+id/finalText"
+        android:layout_marginTop="87dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ff000000" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edittext"
+        android:id="@+id/editButton"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/finalText"
+        android:layout_marginBottom="168dp"
+        android:onClick="onclick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exit"
+        android:id="@+id/exitButton"
+        android:layout_alignTop="@+id/editButton"
+        android:layout_toRightOf="@+id/finalText" />
+</RelativeLayout>
